@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+article, footer, header, nav, section{
+    display: block;
+}
+
+header, footer, #contenido {
+    vertical-align: central;
+    text-align: center;
+}
+
+body {
+    background: #C0C0C0 url(../img/fondo.jpg);
+    color: #FFF;
+    font-size: 1em;
+}
