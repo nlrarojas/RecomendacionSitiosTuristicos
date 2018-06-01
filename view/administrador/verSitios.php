@@ -56,7 +56,7 @@ used to vertically center elements, may need modification if you're not using de
   line-height: 34px;
 }
 </style>
-
+<br/><br/>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -67,7 +67,7 @@ used to vertically center elements, may need modification if you're not using de
                     <h3 class="panel-title">Gestionar sitios</h3>
                   </div>
                   <div class="col col-xs-6 text-right">
-                    <form action="gestionarSitios&insertar" method="post">
+                    <form action="?login&validar&gestionarSitios&insertar" method="post">
                         <button type="submit" class="btn btn-sm btn-primary btn-create">Nuevo sitio</button>
                     </form>
                   </div>
@@ -89,10 +89,10 @@ used to vertically center elements, may need modification if you're not using de
                     <tbody>
                           <tr>
                             <td align="center">
-                                <form action="gestionarSitios&modificar" method="post">
+                                <form action="?login&validar&gestionarSitios&&modificar" method="post">
                                     <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
                                 </form>    
-                                <form action="gestionarSitios&eliminar" method="post">
+                                <form action="?login&validar&gestionarSitios&eliminar" method="post">
                                     <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
                                 </form>
                             </td>
@@ -129,7 +129,3 @@ used to vertically center elements, may need modification if you're not using de
     </div>
 </div>
 
-<?php
-//footer
-include_once '../footer.php';
-?>
