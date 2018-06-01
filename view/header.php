@@ -71,7 +71,6 @@
                             <a class="nav-link btn btn-primary" href="?sitioEspecifico" style="color: white;">Buscar por sitio<span class="sr-only">(current)</span></a>
                     </ul>
                     </li>
-                        <a class="nav-link btn " href="?ingresar" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
                         <a class="nav-link btn " href="?login" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
                     </li>
                 </div>
