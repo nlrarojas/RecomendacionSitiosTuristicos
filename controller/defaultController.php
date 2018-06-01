@@ -22,7 +22,7 @@ class DefaultController {
 
             }
             include 'view/sitioEspecifico.php';
-<<<<<<< HEAD
+
         } elseif(isset($_GET['ingresar'])) {
             include 'view/login.php';
         }
@@ -33,7 +33,7 @@ class DefaultController {
             include 'view/busquedaSitio.php';
         }
         else {
-=======
+
         } elseif(isset($_GET['login'])) {            
             if (isset($_GET['validar'])){                
                 include 'view/indexAdministrador.php';
