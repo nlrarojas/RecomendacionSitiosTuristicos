@@ -13,46 +13,68 @@ header, footer, #contenido {
 }
 
 body {
-    background: #C0C0C0 url(../img/fondo.jpg);
+    /*background: #C0C0C0 url(../img/fondo.jpg);*/
     color: #FFF;
     font-size: 1em;
+
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body section {
+    height: 100%;
+}
+
+#divFooter {
+
+    width: 100%;
+    background: #565656;
+    display: inline-flex;
+    color: #afaaaa;
+}
+
+#divEncabezado{
+    width: 100%;
+    background: #565656;
+    color: #565656;
+    height: auto;
+}
+
+#divEncabezado #navbarSupportedContent{
+    width: 100%;
+    background: #565656;
 }
 
 /*################################### KURY ###############################################*/
 
-input {
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-        border: 1px solid #000000;
-        padding: 0 4px 0 4px;
-     }
 
 div.exploradorCr{
     width: 25%;
     padding-top: 50px;
     padding-left: 50px;
-    color: brown;
-    background-color:antiquewhite; 
+    /*color: brown;*/
+    color: black;
+    /*background: #C0C0C0 url(../img/fondo.jpg);*/
     height: 400px;
-    
+
     border-radius: 0px 0px 0px 0px;
 -moz-border-radius: 0px 0px 0px 0px;
 -webkit-border-radius: 0px 0px 0px 0px;
 border: 0px solid #000000;
-  
+
 }
 
 div.buscador{
+    color: black;
     margin-top:50px;
     margin-left:85%;
-    background-color:darkseagreen;
     width: 250px;
     height: 120px;
-    border-radius: 92px 92px 92px 92px;
+   /* border-radius: 92px 92px 92px 92px;
 -moz-border-radius: 92px 92px 92px 92px;
 -webkit-border-radius: 92px 92px 92px 92px;
-border: 1px solid #000000;
+border: 1px solid #000000;*/
 }
 /*BARRA PARA MEDIR EL PROGRESO TIEMPO */
 .slider{
@@ -85,7 +107,7 @@ border: 1px solid #000000;
 }
 
 .slider>.indicador{
-    background: darkred;
+    background: blue;
     cursor: pointer;
     height: 100%;
     margin-left: -5%;
@@ -125,7 +147,7 @@ border: 1px solid #000000;
 }
 
 .sliderKilometros>.indicadorKilometros{
-    background: darkred;
+    background: blue;
     cursor: pointer;
     height: 100%;
     margin-left: -5%;
@@ -141,4 +163,6 @@ border: 1px solid #000000;
   justify-content: center;
   align-items: center;
     width: 400px;
-}
+    color: black;
+
+  }

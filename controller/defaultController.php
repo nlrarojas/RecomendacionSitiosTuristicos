@@ -8,25 +8,31 @@ class DefaultController {
 
     public function __construct() {
         //Está clase controla la comunicación con la base de datos.
-        $this->model = new DefaultModel();        
+        $this->model = new DefaultModel();
     }
 
-    public function invoke() {  
-        if(isset($_GET[''])) {
+    public function invoke() {
+        if(isset($_GET['sitiosTuristicos'])) {
             if (isset($_GET[''])){
-                
-            } 
-        } 
+
+            }
+            include 'view/sitiosTuristicos.php';
+        } elseif(isset($_GET['sitioEspecifico'])) {
+            if (isset($_GET[''])){
+
+            }
+            include 'view/sitioEspecifico.php';
+        } elseif(isset($_GET['ingresar'])) {
+            include 'view/login.php';
+        }
         elseif(isset($_GET['busquedaSitio'])) {
             if (isset($_GET[''])){
-                
-            } 
+
+            }
             include 'view/busquedaSitio.php';
         }
-        else {            
+        else {
             include 'view/indexView.php';
-            
-        } 
-        
+        }
     }
 }

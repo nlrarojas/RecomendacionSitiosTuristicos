@@ -4,8 +4,18 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="view/css/style.css">
+    
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+
+
 	<title>Busqueda</title>
 </head>
+    
+    <?php
+//header
+include_once 'header.php';
+?>
 <body>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="view/js/script.js" ></script>
@@ -14,8 +24,9 @@
   <div class="col-lg-6">
 	<div class="buscador">
 	<center>
+                <h1>Explorar CR</h1>
         <br>
-Provincias : <select name="provincias" value="provincias" id="provincias">
+Provincias : <select class="selectpicker" data-style="btn-primary" name="provincias" value="provincias" id="provincias">
         <option id="alajuela" value="alajuela">Alajuela</option>
         <option id="san_jose" value="san_jose">San Jose</option>
         <option id="cartago" value="cartago">Cartago</option>
@@ -24,8 +35,6 @@ Provincias : <select name="provincias" value="provincias" id="provincias">
         <option id="guanacaste" value="guanacaste">Guanacaste</option>
         <option id="puntarenas" value="puntarenas">Puntarenas</option>
         </select><br><br>
-
-        <input type="button" id="buscar" value="Buscar">
         
     </center><br><br>
           <div id="capa">
@@ -35,7 +44,7 @@ Provincias : <select name="provincias" value="provincias" id="provincias">
 
   
 	<div class="exploradorCr">	
-        <h1>Explorar CR</h1><br>
+
         
         <h3>Tiempo</h3>
         
