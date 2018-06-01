@@ -67,8 +67,8 @@ used to vertically center elements, may need modification if you're not using de
                     <h3 class="panel-title">Gestionar sitios</h3>
                   </div>
                   <div class="col col-xs-6 text-right">
-                    <form action="?login&validar&gestionarSitios&insertar" method="post">
-                        <button type="submit" class="btn btn-sm btn-primary btn-create">Nuevo sitio</button>
+                    <form action="?login&validar&gestionarRutas&insertar" method="post">
+                        <button type="submit" class="btn btn-sm btn-primary btn-create">Nueva ruta</button>
                     </form>
                   </div>
                 </div>
@@ -80,48 +80,60 @@ used to vertically center elements, may need modification if you're not using de
                         <th>Acciones</th>
                         <th class="hidden-xs">ID</th>                        
                         <th>Nombre</th>
-                        <th>Provincia</th>
-                        <th>Direccion</th>
-                        <th>Descripción</th>
-                        <th>Calificación</th>
+                        <th>Distancia</th>
+                        <th>Duración</th>
+                        <th>Punto de partida</th>
+                        <th>Punto de llegada</th>
                     </tr> 
                     </thead>
                     <tbody>
                           <tr>
                             <td align="center">
                                 <div style="display: inline-block;">
-                                    <form action="?login&validar&gestionarSitios&&modificar" method="post">
+                                    <form action="?login&validar&gestionarRutas&&modificar" method="post">
+                                        <input type="submit" class="btn btn-primary" value="Ver ruta"><em class="fa fa-pencil"></em>
+                                    </form> 
+                                    <form action="?login&validar&gestionarRutas&asignar" method="post">
+                                        <input type="submit" class="btn btn-info" value="Asignar sitios"><em class="fa fa-trash"></em>
+                                    </form> 
+                                    <form action="?login&validar&gestionarRutas&&modificar" method="post">
                                         <input type="submit" class="btn btn-success" value="Modificar"><em class="fa fa-pencil"></em>
                                     </form>    
-                                    <form action="?login&validar&gestionarSitios&eliminar" method="post">
+                                    <form action="?login&validar&gestionarRutas&eliminar" method="post">
                                         <input type="submit" class="btn btn-danger" value="Eliminar"><em class="fa fa-trash"></em>
-                                    </form> 
+                                    </form>                                     
                                 </div>
                             </td>
                             <td class="hidden-xs">1</td>
-                            <td>Playa Conchal</td>
-                            <td>Guanacaste</td>
-                            <td>En Guanacaste</td>
-                            <td>Playa</td>
-                            <td>4.3</td>
+                            <td>Vuelta al mono</td>
+                            <td>10 Km</td>
+                            <td>1 hora y 25 minutos</td>
+                            <td>Orosi</td>
+                            <td>Cachí</td>
                           </tr>
                           <tr>
                             <td align="center">
                                 <div style="display: inline-block;">
-                                    <form action="?login&validar&gestionarSitios&&modificar" method="post">
+                                    <form action="?login&validar&gestionarRutas&&verRuta" method="post">
+                                        <input type="submit" class="btn btn-primary" value="Ver ruta"><em class="fa fa-pencil"></em>
+                                    </form>                                     
+                                    <form action="?login&validar&gestionarRutas&asignar" method="post">
+                                        <input type="submit" class="btn btn-info" value="Asignar sitios"><em class="fa fa-trash"></em>
+                                    </form> 
+                                    <form action="?login&validar&gestionarRutas&&modificar" method="post">
                                         <input type="submit" class="btn btn-success" value="Modificar"><em class="fa fa-pencil"></em>
                                     </form>    
-                                    <form action="?login&validar&gestionarSitios&eliminar" method="post">
+                                    <form action="?login&validar&gestionarRutas&eliminar" method="post">
                                         <input type="submit" class="btn btn-danger" value="Eliminar"><em class="fa fa-trash"></em>
                                     </form> 
                                 </div>
                             </td>
-                            <td class="hidden-xs">2</td>
-                            <td>Bagaces</td>
-                            <td>Puntarenas</td>
-                            <td>En Puntarenas</td>
-                            <td>Catarátas</td>
-                            <td>3.7</td>
+                            <td> <hidden>2</hidden></td>
+                            <td>Conquistadores</td>
+                            <td>25 KM</td>
+                            <td>5 horas</td>
+                            <td>Cartago</td>
+                            <td>Turrialba</td>
                           </tr>
                         </tbody>
                 </table>            

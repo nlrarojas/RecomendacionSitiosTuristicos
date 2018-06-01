@@ -37,7 +37,7 @@
                             <a class="nav-link btn btn-primary" href="?login&validar&gestionarSitios" style="color: white;">Gestionar sitios<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?gestionarRutas" style="color: white;">Gestionar rutas<span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn btn-primary" href="?login&validar&gestionarRutas" style="color: white;">Gestionar rutas<span class="sr-only">(current)</span></a>
                         </li>
                     </ul> 
                     </li>

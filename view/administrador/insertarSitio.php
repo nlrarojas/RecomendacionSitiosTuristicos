@@ -2,7 +2,7 @@
 //header
 include_once 'header.php';
 ?>
-<form action="?login&validar&gestionarSitios&insertar" method="post">
+<form action="?login&validar&gestionarSitios&insertarSitio" method="post">
     <br/><br/>
     <h1>Ingrear un nuevo sitio turístico</h1>
     <div class="form-control" style="float:left; width: 50%;">
