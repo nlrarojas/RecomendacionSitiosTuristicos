@@ -17,6 +17,11 @@ class DefaultController {
                 
             } 
             include 'view/sitiosTuristicos.php';
+        } elseif(isset($_GET['sitioEspecifico'])) {
+            if (isset($_GET[''])){
+                
+            } 
+            include 'view/sitioEspecifico.php';
         } else {            
             include 'view/indexView.php';
         }        

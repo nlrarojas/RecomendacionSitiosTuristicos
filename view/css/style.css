@@ -22,6 +22,10 @@ body {
     height:100%;
 }
 
+body section {
+    height: 100%;
+}
+
 #divFooter {
     
     width: 100%;     
