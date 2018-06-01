@@ -27,6 +27,16 @@ include_once 'header.php';
             <label for="lblCalificacion">Calificación</label>
             <input type="number" id="lblCalificacion" min="0" max="5" class="form-control" style="width: 40%; margin: 0 auto;"></input>
         </div>
+        <div>
+            <br/>
+            <div class="custom-file" id="customFile" lang="es" style="width: 60%;">
+                <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                <label class="custom-file-label" for="exampleInputFile">
+                Selecione la imagen...
+                </label>
+            </div>      
+            <br/>  
+        </div>
         <br/>
         <div style="float: center; width: 40%; display: inline-block;">
             <input type="submit" class="btn btn-primary" value="Agregar" style="float: left;"/>

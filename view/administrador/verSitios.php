@@ -105,6 +105,24 @@ used to vertically center elements, may need modification if you're not using de
                             <td>Playa</td>
                             <td>4.3</td>
                           </tr>
+                          <tr>
+                            <td align="center">
+                                <div style="display: inline-block;">
+                                    <form action="?login&validar&gestionarSitios&&modificar" method="post">
+                                        <input type="submit" class="btn btn-success" value="Modificar"><em class="fa fa-pencil"></em>
+                                    </form>    
+                                    <form action="?login&validar&gestionarSitios&eliminar" method="post">
+                                        <input type="submit" class="btn btn-danger" value="Eliminar"><em class="fa fa-trash"></em>
+                                    </form> 
+                                </div>
+                            </td>
+                            <td class="hidden-xs">1</td>
+                            <td>Bagaces</td>
+                            <td>Puntarenas</td>
+                            <td>En Puntarenas</td>
+                            <td>Catarátas</td>
+                            <td>3.7</td>
+                          </tr>
                         </tbody>
                 </table>            
             </div>            
