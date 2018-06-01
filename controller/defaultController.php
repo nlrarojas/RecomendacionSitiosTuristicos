@@ -16,9 +16,17 @@ class DefaultController {
             if (isset($_GET[''])){
                 
             } 
-        } else {            
+        } 
+        elseif(isset($_GET['busquedaSitio'])) {
+            if (isset($_GET[''])){
+                
+            } 
+            include 'view/busquedaSitio.php';
+        }
+        else {            
             include 'view/indexView.php';
             
-        }        
+        } 
+        
     }
 }

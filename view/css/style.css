@@ -36,9 +36,9 @@ div.exploradorCr{
     background-color:antiquewhite; 
     height: 400px;
     
-    border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
+    border-radius: 0px 0px 0px 0px;
+-moz-border-radius: 0px 0px 0px 0px;
+-webkit-border-radius: 0px 0px 0px 0px;
 border: 0px solid #000000;
   
 }
@@ -54,9 +54,8 @@ div.buscador{
 -webkit-border-radius: 92px 92px 92px 92px;
 border: 1px solid #000000;
 }
-/*BARRA PARA MEDIR EL PROGRESO*/
+/*BARRA PARA MEDIR EL PROGRESO TIEMPO */
 .slider{
-    background: url(/PaginaWebExpertos/imagenes/grid.png) -25px -25px; 
     /*border: 1px solid grey;*/
     height: 30px;
     position: relative;
@@ -93,4 +92,53 @@ border: 1px solid #000000;
     left: 100%;
     position: absolute;
     width: 5%;
+}
+
+/*BARRA PARA MEDIR EL PROGRESO Kilometros */
+.sliderKilometros{
+    /*border: 1px solid grey;*/
+    height: 30px;
+    position: relative;
+    width: 60%;
+}
+
+.sliderKilometros>.progresoKilometros{
+    background: #14aaf6;
+    /*height: 100%;*/
+    cursor: pointer;
+    height: 40%;
+    border-radius: 10px;
+    top: 25%;
+    position: absolute;
+    width: 100%;
+}
+
+.sliderKilometros>.emptyprogressKilometros{
+    background: #97d9fb;
+    /*height: 100%;*/
+    cursor: pointer;
+    height: 40%;
+    border-radius: 10px;
+    top: 25%;
+    position: absolute;
+    width: 100%;
+}
+
+.sliderKilometros>.indicadorKilometros{
+    background: darkred;
+    cursor: pointer;
+    height: 100%;
+    margin-left: -5%;
+    left: 100%;
+    position: absolute;
+    width: 5%;
+}
+
+#capa{
+  height: 150px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 400px;
 }
