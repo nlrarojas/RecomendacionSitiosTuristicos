@@ -18,6 +18,7 @@ class AdminController {
             } 
             include 'view/sitiosTuristicos.php';
         } elseif(isset($_GET['gestionarSitios'])) {
+            print(1);
             if (isset($_GET['insertar'])){
                 
             } elseif (isset($_GET['modificar'])){
@@ -30,31 +31,13 @@ class AdminController {
                 
             }
             include 'view/sitiosTuristicos.php';
-        } elseif(isset($_GET[''])) {
+        } elseif(isset($_GET['cerrar'])) {            
             if (isset($_GET[''])){
                 
             } 
-            include 'view/sitiosTuristicos.php';
-        } 
-        elseif(isset($_GET[''])) {
-            if (isset($_GET[''])){
-                
-            } 
-            include 'view/sitiosTuristicos.php';
-        } 
-        elseif(isset($_GET[''])) {
-            if (isset($_GET[''])){
-                
-            } 
-            include 'view/sitiosTuristicos.php';
-        } 
-        elseif(isset($_GET[''])) {
-            if (isset($_GET[''])){
-                
-            } 
-            include 'view/sitiosTuristicos.php';
+            include '../../index.php';
         } else {            
-            include 'view/indexView.php';
+            include 'view/administrador/indexView.php';
         }            
     }
 }

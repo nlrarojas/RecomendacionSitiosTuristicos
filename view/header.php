@@ -23,7 +23,7 @@
     <header>
         <div id="divEncabezado"><br/>                        
             <nav id="divMenuNav" class="navbar navbar-expand-lg navbar-light bg-light">    
-                <a class="navbar-brand" >Menú</a>
+                <a class="navbar-brand" >Explorer CR</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                             <a class="nav-link btn btn-primary" href="?sitioEspecifico" style="color: white;">Buscar por sitio<span class="sr-only">(current)</span></a>    
                     </ul> 
                     </li>
-                        <a class="nav-link btn " href="?ingresar" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
+                        <a class="nav-link btn " href="?login" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
                     </li>
                 </div>
             </nav>   

@@ -22,8 +22,12 @@ class DefaultController {
                 
             } 
             include 'view/sitioEspecifico.php';
-        } elseif(isset($_GET['ingresar'])) {
-            include 'view/login.php';
+        } elseif(isset($_GET['login'])) {            
+            if (isset($_GET['validar'])){                
+                include 'view/indexAdministrador.php';
+            } else {                
+                include 'view/login.php';
+            }
         }else {            
             include 'view/indexView.php';
         }    
