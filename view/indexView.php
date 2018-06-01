@@ -15,8 +15,13 @@ include_once 'header.php';
         <?php
         } else {
         ?>
-            <p id="aIndex">
-                Sitios Turísticos
+            <h1>Bienvenido(a) a Explorer CR</h1>
+            </br>
+            <p class="western">
+                El presente proyecto se desarroll&oacute con el fin de construir y recomendar rutas turísticas a partir de una localidad en que el usuario está o </br>
+                que suministra como punto de partida. Debe tomar en cuenta restricciones de tiempo y distancia de recorrido establecidas por el usuario o por lo </br>
+                que se incluya en la ruta.  Debe poder hacerse un “recorrido virtual” por cada ruta recomendada. Es decir, debe poder recibirse información </br>
+                acerca de cada nodo incluido en cada ruta.   
             </p>
         <?php 
         }

@@ -12,10 +12,11 @@ class DefaultController {
     }
 
     public function invoke() {  
-        if(isset($_GET[''])) {
+        if(isset($_GET['sitiosTuristicos'])) {
             if (isset($_GET[''])){
                 
             } 
+            include 'view/sitiosTuristicos.php';
         } else {            
             include 'view/indexView.php';
         }        

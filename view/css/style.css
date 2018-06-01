@@ -16,4 +16,27 @@ body {
     background: #C0C0C0 url(../img/fondo.jpg);
     color: #FFF;
     font-size: 1em;
+
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+#divFooter {
+    
+    width: 100%;     
+    background: #565656;
+    display: inline-flex;
+    color: #afaaaa;
+}
+
+#divEncabezado{
+    width: 100%;
+    background: #565656;
+    color: #565656;
+    height: auto;     
+}
+
+#divEncabezado #navbarSupportedContent{    
+    background: #565656;           
 }
