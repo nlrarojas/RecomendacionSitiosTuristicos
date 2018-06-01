@@ -26,7 +26,7 @@ include_once 'header.php';
 	<center>
                 <h1>Explorar CR</h1>
         <br>
-Provincias : <select class="selectpicker" data-style="btn-primary" name="provincias" value="provincias" id="provincias">
+Provincias : <select class="form-control" data-style="btn-primary" name="provincias" value="provincias" id="provincias">
         <option id="alajuela" value="alajuela">Alajuela</option>
         <option id="san_jose" value="san_jose">San Jose</option>
         <option id="cartago" value="cartago">Cartago</option>
@@ -56,7 +56,7 @@ Provincias : <select class="selectpicker" data-style="btn-primary" name="provinc
         
         <label>
             Horas 
-            <input type="text" value="10" size="1" readonly="readonly" id="valueSlider">
+            <input type="text" value="10" size="1" readonly="readonly" id="valueSlider" class="form-control">
         </label>
         
         <h3>Distancia</h3>
@@ -69,7 +69,7 @@ Provincias : <select class="selectpicker" data-style="btn-primary" name="provinc
         
         <label>
             Kilometros 
-            <input type="text" value="50" size="1" readonly="readonly" id="valueSliderKilometros">
+            <input type="text" value="50" size="1" readonly="readonly" id="valueSliderKilometros" class="form-control">
         </label>   
 </div>
     

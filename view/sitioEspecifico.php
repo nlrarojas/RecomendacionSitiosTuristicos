@@ -5,8 +5,9 @@ include_once 'header.php';
 <br/><br/>
 <h1>Buscar ruta por sitio en específico</h1>
 <br/>
-<b>Inicio: </b>
-<select id="start">
+<div style="width: 20%; margin: 0 auto; float: center;">
+<b>Partida: </b>
+<select id="start" class="form-control">
     <option value="Provincia de Cartago, Cartago">Cartago</option>
     <option value="Provincia de San José, San José">San José</option>
     <option value="Provincia de Heredia, Heredia">Heredia</option>
@@ -15,8 +16,8 @@ include_once 'header.php';
     <option value="Provincia de Limón, Limón">Limón</option>
     <option value="Provincia de Puntarenas, Puntarenas">San José</option>
 </select>
-<b>Final: </b>
-<select id="end">
+<b>Llegada: </b>
+<select id="end" class="form-control">
     <option value="Provincia de Cartago, Cartago">Cartago</option>
     <option value="Provincia de San José, San José">San José</option>
     <option value="Provincia de Heredia, Heredia">Heredia</option>
@@ -25,9 +26,11 @@ include_once 'header.php';
     <option value="Provincia de Limón, Limón">Limón</option>
     <option value="Provincia de Puntarenas, Puntarenas">San José</option>
 </select>
+</div>
 <br/><br/><br/>
 <div>
 <div id="googleMap" class="col" style="height: 500px;width: 100%;"></div>
+<br/><br/><br/>
 <div><strong id="TiempoyDistancia" style="display:none;">Tiempo y Distancia</strong>
       <div id="output"></div></div>
         
@@ -144,5 +147,5 @@ service.getDistanceMatrix({
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjqEeMsyssgt2NQ57PcegmXy95t4Wx8ww&callback=myMap"></script>
 <?php
 //footer
-include_once 'footer.php';
+//include_once 'footer.php';
 ?>
