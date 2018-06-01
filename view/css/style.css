@@ -37,6 +37,7 @@ body {
     height: auto;     
 }
 
-#divEncabezado #navbarSupportedContent{    
+#divEncabezado #navbarSupportedContent{
+    width: 100%;
     background: #565656;           
 }

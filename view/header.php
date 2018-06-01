@@ -34,7 +34,7 @@
                             <a class="nav-link btn btn-primary" href="index.php" style="color: white;">Inicio<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?sitiosTuristicos" style="color: white;">Sitios turiticos<span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn btn-primary" href="?sitiosTuristicos" style="color: white;">Sitios turísticos<span class="sr-only">(current)</span></a>
                         </li>
                     </ul> 
                 </div>
