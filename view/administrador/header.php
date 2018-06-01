@@ -32,16 +32,14 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link btn btn-primary" href="index.php" style="color: white;">Inicio<span class="sr-only">(current)</span></a>
+                        </li>                        
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-primary" href="?gestionarSitios" style="color: white;">Gestionar sitios<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?sitiosTuristicos" style="color: white;">Sitios turísticos<span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn btn-primary" href="?gestionarRutas" style="color: white;">Gestionar rutas<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?sitioEspecifico" style="color: white;">Buscar por sitio<span class="sr-only">(current)</span></a>    
                     </ul> 
-                    </li>
-                        <a class="nav-link btn " href="?ingresar" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
-                    </li>
                 </div>
             </nav>   
             <br/>                         
