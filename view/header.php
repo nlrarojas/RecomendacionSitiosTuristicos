@@ -37,7 +37,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin: 0 auto;">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link btn btn-primary" href="index.php" style="color: white;">ItemMenu<span class="sr-only">(current)</span></a>
+                                <a class="nav-link btn btn-primary" href="busquedaSitio.php" style="color: white;">Busqueda del sitio<span class="sr-only">(current)</span></a>
                             </li>
                         </ul> 
                     </div>

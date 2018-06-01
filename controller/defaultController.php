@@ -18,6 +18,7 @@ class DefaultController {
             } 
         } else {            
             include 'view/indexView.php';
+            
         }        
     }
 }
