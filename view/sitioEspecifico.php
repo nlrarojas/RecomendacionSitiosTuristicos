@@ -144,5 +144,5 @@ service.getDistanceMatrix({
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjqEeMsyssgt2NQ57PcegmXy95t4Wx8ww&callback=myMap"></script>
 <?php
 //footer
-//include_once 'footer.php';
+include_once 'footer.php';
 ?>

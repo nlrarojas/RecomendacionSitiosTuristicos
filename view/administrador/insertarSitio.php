@@ -32,5 +32,5 @@ include_once 'header.php';
 </form>
 <?php
 //footer
-include_once '../footer.php';
+//include_once '../footer.php';
 ?>

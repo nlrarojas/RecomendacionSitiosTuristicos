@@ -131,5 +131,5 @@ used to vertically center elements, may need modification if you're not using de
 
 <?php
 //footer
-include_once '../footer.php';
+//include_once '../footer.php';
 ?>
