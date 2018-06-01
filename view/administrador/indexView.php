@@ -40,5 +40,5 @@ include_once 'header.php';
 <br/><br/><br/><br/><br/>
 <?php
 //footer
-include_once '../footer.php';
+//include_once 'view/footer.php';
 ?>

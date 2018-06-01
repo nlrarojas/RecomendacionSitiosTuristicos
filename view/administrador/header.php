@@ -23,7 +23,7 @@
     <header>
         <div id="divEncabezado"><br/>                        
             <nav id="divMenuNav" class="navbar navbar-expand-lg navbar-light bg-light">    
-                <a class="navbar-brand" >Menú</a>
+                <a class="navbar-brand" >Explorer CR</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,12 +34,15 @@
                             <a class="nav-link btn btn-primary" href="index.php" style="color: white;">Inicio<span class="sr-only">(current)</span></a>
                         </li>                        
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?gestionarSitios" style="color: white;">Gestionar sitios<span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn btn-primary" href="?login&validar&gestionarSitios" style="color: white;">Gestionar sitios<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link btn btn-primary" href="?gestionarRutas" style="color: white;">Gestionar rutas<span class="sr-only">(current)</span></a>
                         </li>
                     </ul> 
+                    </li>
+                        <a class="nav-link btn " href="?cerrar" style="float: right; color: white;">Cerrar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
+                    </li>
                 </div>
             </nav>   
             <br/>                         

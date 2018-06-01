@@ -18,13 +18,44 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-glyphicons.css"></link>
     <link rel="stylesheet" type="text/css" media="all" href="css/styles.css"></link>
+    <style>
+    #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
 </head>
 <body >
     <header>
+<<<<<<< HEAD
         <div id="divEncabezado"><br/>
             <nav id="divMenuNav" class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" >Menú</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+=======
+        <div id="divEncabezado"><br/>                        
+            <nav id="divMenuNav" class="navbar navbar-expand-lg navbar-light bg-light">    
+                <a class="navbar-brand" >Explorer CR</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+>>>>>>> master
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,6 +72,7 @@
                     </ul>
                     </li>
                         <a class="nav-link btn " href="?ingresar" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
+                        <a class="nav-link btn " href="?login" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
                     </li>
                 </div>
             </nav>
