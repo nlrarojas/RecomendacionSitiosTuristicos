@@ -18,30 +18,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-glyphicons.css"></link>
     <link rel="stylesheet" type="text/css" media="all" href="css/styles.css"></link>
-    <style>
-    #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-      }
-    </style>
 </head>
 <body >
     <header>
@@ -56,15 +32,16 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link btn btn-primary" href="index.php" style="color: white;">Inicio<span class="sr-only">(current)</span></a>
+                        </li>                        
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-primary" href="?login&validar&gestionarSitios" style="color: white;">Gestionar sitios<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?sitiosTuristicos" style="color: white;">Sitios turísticos<span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn btn-primary" href="?gestionarRutas" style="color: white;">Gestionar rutas<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?sitioEspecifico" style="color: white;">Buscar por sitio<span class="sr-only">(current)</span></a>    
                     </ul> 
                     </li>
-                        <a class="nav-link btn " href="?login" style="float: right; color: white;">Iniciar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
+                        <a class="nav-link btn " href="?cerrar" style="float: right; color: white;">Cerrar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
                     </li>
                 </div>
             </nav>   
