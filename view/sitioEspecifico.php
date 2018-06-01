@@ -28,7 +28,7 @@ include_once 'header.php';
 <br/><br/><br/>
 <div>
 <div id="googleMap" class="col" style="height: 500px;width: 100%;"></div>
-<div><strong>Tiempo y Distancia</strong>
+<div><strong id="TiempoyDistancia" style="display:none;">Tiempo y Distancia</strong>
       <div id="output"></div></div>
         
       </div>
@@ -80,6 +80,7 @@ service.getDistanceMatrix({
     var destinationList = response.destinationAddresses;
     var outputDiv = document.getElementById('output');
     outputDiv.innerHTML = '';
+    document.getElementById('TiempoyDistancia').style.display = 'block';
     deleteMarkers(markersArray);
 
     var showGeocodedAddressOnMap = function(asDestination) {
