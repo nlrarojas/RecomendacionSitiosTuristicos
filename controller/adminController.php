@@ -22,12 +22,16 @@ class AdminController {
                 include 'view/administrador/insertarSitio.php';
             } elseif (isset($_GET['modificar'])){
                 if (isset($_GET['modificarSitio'])){
-                    include 'administrador/indexView.php';
+                    include 'view/administrador/indexView.php';
                 } else {
-                    include 'administrador/modificarSitio.php';
+                    include 'view/administrador/modificarSitio.php';
                 }
             } elseif (isset($_GET['eliminar'])){
-                
+                if (isset($_GET['eliminarSitio'])){
+                    include 'view/administrador/indexView.php';
+                } else {
+                    include 'view/administrador/eliminarSitio.php';
+                }
             }
             include 'view/administrador/verSitios.php';
         } elseif(isset($_GET['cerrar'])) {            

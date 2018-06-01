@@ -2,7 +2,7 @@
 //header
 include_once 'header.php';
 ?>
-<form action="?gestionarSitios&insertar" method="post">
+<form action="?login&validar&gestionarSitios&insertar" method="post">
     <br/><br/>
     <h1>Ingrear un nuevo sitio turístico</h1>
     <div class="form-control" style="float:left; width: 50%;">
@@ -29,7 +29,7 @@ include_once 'header.php';
         </div>
         <br/>
         <div style="float: center; width: 40%; display: inline-block;">
-            <input type="submit" class="btn btn-primary" text="Agregar" style="float: left;"/>
+            <input type="submit" class="btn btn-primary" value="Agregar" style="float: left;"/>
             <a class="btn btn-danger" href="?login&validar&gestionarSitios" style="float: right;">Cancelar</a>
             <br/><br/>
         </div>        
