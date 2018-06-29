@@ -51,5 +51,18 @@ class DefaultModel {
         }        
         return $sitios;
     }
+    public function topTres(){
+        //Se ejecuta el procedimiento 
+        $procedimiento = "call top_tres();";
+        $query = mysqli_query($this->conn, $procedimiento);
+        $top = array();
+        //Se obtienen los datos de la base de datos y se almacenan en un arreglo
+        while ($data = mysqli_fetch_assoc($query)) {
+            array_push($top, $data);
+        }      
+        //mysqli_close($this->conn);
+        return $top;
+        
+    }
 }
 ?>

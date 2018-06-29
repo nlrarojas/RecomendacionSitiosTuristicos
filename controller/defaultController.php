@@ -86,9 +86,14 @@ class DefaultController {
                 } else {                
                     include 'view/login.php';
                 }
-            } else {            
-
+            } else {  
+                //esto hace llegar la info a la vista y va aqui por que se carga apaenas levanta              
+                $top = $this->model->topTres();
+                //print_r($top);
+                           
                 include 'view/indexView.php';
+                   
+               
             }
         }
     }

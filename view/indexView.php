@@ -56,27 +56,33 @@ include_once 'header.php';
  <!-- Marketing messaging and featurettes
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
+      <h1 class="text-center">Top 3 de las rutas</h1><br>
  <div class="container marketing">
 
 <!-- Three columns of text below the carousel -->
+<?php if((isset($top))){?>
+
 <div class="row" id="mejores-rutas">
   <div class="col-lg-4">
-    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-    <h2>Heading</h2>
-    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+    <img class="rounded-circle" src="view/img/puestoUno.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2><?php echo $top[0]['nombre'] ?></h2>
+    <h6>Calificaion</h6>
+    <h5> <?php echo $top[0]['Calificacion'] ?></h5>
   </div><!-- /.col-lg-4 -->
   <div class="col-lg-4">
-    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-    <h2>Heading</h2>
-    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+    <img class="rounded-circle" src="view/img/puestoDos.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2><?php echo $top[1]['nombre'] ?></h2>
+    <h6>Calificaion</h6>
+    <h5> <?php echo $top[1]['Calificacion'] ?></h5>
   </div>
   <div class="col-lg-4">
-    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-    <h2>Heading</h2>
-    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <img class="rounded-circle" src="view/img/puestoTres.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2><?php echo $top[2]['nombre'] ?></h2>
+    <h6>Calificaion</h6>
+    <h5> <?php echo $top[2]['Calificacion'] ?></h5>
   </div>
 </div>
-
+<?php } ?>
 
 <!-- START THE FEATURETTES -->
 
@@ -145,7 +151,7 @@ include_once 'header.php';
 </form>
 </div>
   <div class="col-md-5">
-    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+    <img class="featurette-image img-fluid mx-auto" src="view/img/imagenMostrar.jpg" alt="Generic placeholder image">
   </div>
 </div>
 
