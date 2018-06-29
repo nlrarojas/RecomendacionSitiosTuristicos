@@ -39,7 +39,7 @@
               <a class="nav-link" id="scroll" href="#formularios">Búsqueda de Rutas Turísticas</a>
             </li>
             <li class="nav-item-right" style="float: rigth;">
-              <a class="nav-link"  href="?login" id="scroll" href="#formularios">Iniciar sesión</a>
+              <a class="nav-link"  href="?login" id="scroll" style="float: right; color: white;">Iniciar sesión</a>
             </li>
           </ul>
         </div>
