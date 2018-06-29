@@ -7,7 +7,7 @@
                 "host" => "163.178.173.144",
                 "user" => "multi-paraiso",
                 "pass" => "multimedios.rp.2017",
-                "database" => "",
+                "database" => "DB_EXPLORER_CR",
                 "charset" => "utf8"
             );
         }

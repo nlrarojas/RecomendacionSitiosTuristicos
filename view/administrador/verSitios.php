@@ -67,7 +67,7 @@ used to vertically center elements, may need modification if you're not using de
                     <h3 class="panel-title">Gestionar sitios</h3>
                   </div>
                   <div class="col col-xs-6 text-right">
-                    <form action="?login&validar&gestionarSitios&insertar" method="post">
+                    <form action="?administrador&gestionarSitios&insertar" method="post">
                         <button type="submit" class="btn btn-sm btn-primary btn-create">Nuevo sitio</button>
                     </form>
                   </div>
@@ -81,41 +81,38 @@ used to vertically center elements, may need modification if you're not using de
                         <th class="hidden-xs">ID</th>                        
                         <th>Nombre</th>
                         <th>Provincia</th>
-                        <th>Direccion</th>
                         <th>Descripción</th>
                         <th>Calificación</th>
                     </tr> 
                     </thead>
+
+                      <?php
+                            if (isset($sitio)) {
+                                while ($sitios = $sitio->fetch_array(MYSQLI_BOTH)) { 
+                                  ?> 
+
                     <tbody>
                           <tr>
+                            
                             <td align="center">                                                                   
                               <div style="width: 150%; display: inline-block;">
-                                <a href="?login&validar&gestionarSitios&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
-                                <a href="?login&validar&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                                <a href="?administrador&gestionarSitios&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                <a href="?administrador&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
                               </div>
                             </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Playa Conchal</td>
-                            <td>Guanacaste</td>
-                            <td>En Guanacaste</td>
-                            <td>Playa</td>
-                            <td>4.3</td>
+                            <td class="hidden-xs"><?php echo $sitios['idSitio'] ?> </td>
+                            <td> <?php echo $sitios['nombreSitio'] ?></td>
+                            <td> <?php echo $sitios['proviciaSitio'] ?> </td>
+                            <td> <?php echo $sitios['descripcionSitio'] ?> </td>
+                            <td> <?php echo $sitios['calificacionSitio'] ?> </td>
+                         
                           </tr>
-                          <tr>
-                            <td align="center">
-                              <div style="width: 150%; display: inline-block;">
-                                <a href="?login&validar&gestionarSitios&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
-                                <a href="?login&validar&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
-                              </div>
-                            </td>
-                            <td class="hidden-xs">2</td>
-                            <td>Bagaces</td>
-                            <td>Puntarenas</td>
-                            <td>En Puntarenas</td>
-                            <td>Catarátas</td>
-                            <td>3.7</td>
-                          </tr>
-                        </tbody>
+                         
+                      </tbody>
+                       <?php
+                          }
+                            }
+                              ?>
                 </table>            
             </div>            
             </div>

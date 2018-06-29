@@ -2,7 +2,7 @@
 //header
 include_once 'header.php';
 ?>
-<form action="?login&validar&gestionarRutas&insertarRuta" method="post">
+<form action="?administrador&gestionarRutas&insertarRuta" method="post">
     <br/><br/>
     <h1>Ingresar un nueva ruta turística</h1>
     <div class="form-control" style="float:left; width: 50%;">

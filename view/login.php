@@ -21,28 +21,14 @@
 <!-- Form Module-->
 <div class="module form-module" style="border-top: 5px solid #009999;">
   <div class="toggle" style="background-color: #009999;"><i class="fa fa-times fa-pencil" style="background-color: #009999;"></i>
-    <div class="tooltip">Registro</div>
   </div>
   <div class="form">
     <h2 style="color: #009999;">Ingrese a su cuenta</h2>
     <form action="?login&validar" method="post">
-      <input type="text" placeholder="Nombre de usuario" required=""/>
-      <input type="password" placeholder="Contraseña" required=""/>
+      <input id="usuario" name="usuario" type="text" placeholder="Nombre de usuario" required=""/>
+      <input id="contrasena" name="contrasena" type="password" placeholder="Contraseña" required=""/>
       <input type="submit" style="color: white; background-color: #009999;" value="Ingresar"/> <!--AQUI IRIA A LA PAGINA DDE ADMINISTRADOR -->
       </br></br>
-    </form>
-    <form action="index.php" method="post">
-        <input type="submit" style="color: white; background-color: #009999;" value="Regresar a menú principal"/>        
-    </form>
-  </div>
-  <div class="form">
-    <h2 style="color: #009999;">Crear una cuenta</h2>
-    <form action="?login&validar" method="post">
-      <input type="text" placeholder="Nombre de usuario" required=""/>
-      <input type="password" placeholder="Contraseña" required=""/>
-      <input type="email" placeholder="Correo electrónico" required=""/>
-      <input type="submit" style="color: white; background-color: #009999;" value="Registrarse"/>      
-      </br></br>      
     </form>
     <form action="index.php" method="post">
         <input type="submit" style="color: white; background-color: #009999;" value="Regresar a menú principal"/>        
