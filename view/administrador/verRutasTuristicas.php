@@ -91,10 +91,10 @@ used to vertically center elements, may need modification if you're not using de
                             <td align="center">
                                 <div style="display: inline-block;">                                                                        
                                     <div style="width: 150%; display: inline-block;">
-                                        <a href="?login&validar&gestionarRutas&&ver" class="btn btn-outline-primary" style="float: left;"><img src="view/img/check.png"></img></a>
-                                        <a href="?login&validar&gestionarRutas&&asignar" class="btn btn-outline-info" style="float: left;"><img src="view/img/add.png"></img></a>
-                                        <a href="?login&validar&gestionarRutas&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
-                                        <a href="?login&validar&gestionarRutas&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Ver ruta" href="?login&validar&gestionarRutas&&ver" class="btn btn-outline-primary" style="float: left;"><img src="view/img/check.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Asignar ruta" href="?login&validar&gestionarRutas&&asignar" class="btn btn-outline-info" style="float: left;"><img src="view/img/add.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Modificar ruta" href="?login&validar&gestionarRutas&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Eliminar ruta" href="?login&validar&gestionarRutas&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
                                     </div>                                    
                                 </div>
                             </td>
@@ -109,10 +109,10 @@ used to vertically center elements, may need modification if you're not using de
                             <td align="center">
                                 <div style="display: inline-block;">                                                                        
                                     <div style="width: 150%; display: inline-block;">
-                                        <a href="?login&validar&gestionarRutas&&ver" class="btn btn-outline-primary" style="float: left;"><img src="view/img/check.png"></img></a>
-                                        <a href="?login&validar&gestionarRutas&&asignar" class="btn btn-outline-info" style="float: left;"><img src="view/img/add.png"></img></a>
-                                        <a href="?login&validar&gestionarRutas&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
-                                        <a href="?login&validar&gestionarRutas&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                                    <a data-toggle="tooltip" data-placement="top" title="Ver ruta" href="?login&validar&gestionarRutas&&ver" class="btn btn-outline-primary" style="float: left;"><img src="view/img/check.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Asignar ruta" href="?login&validar&gestionarRutas&&asignar" class="btn btn-outline-info" style="float: left;"><img src="view/img/add.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Modificar ruta" href="?login&validar&gestionarRutas&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Eliminar ruta" href="?login&validar&gestionarRutas&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
                                     </div>
                                 </div>
                             </td>
