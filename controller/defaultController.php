@@ -40,15 +40,17 @@ class DefaultController {
                         include 'view/administrador/insertarSitio.php';
                     }
                 } elseif (isset($_GET['modificar'])){
-                    if (isset($_GET['modificarSitio'])){
+                    if (isset($_GET['modificarSitio'])){                        
                         include 'view/administrador/indexView.php';
                     } else {
+                        $sitio = $this->model->obtenerSitioPorId($_GET['idSitio']);                           
                         include 'view/administrador/modificarSitio.php';
                     }
                 } elseif (isset($_GET['eliminar'])){
                     if (isset($_GET['eliminarSitio'])){
                         include 'view/administrador/indexView.php';
                     } else {
+                        $sitio = $this->model->obtenerSitioPorId($_GET['idSitio']);       
                         include 'view/administrador/eliminarSitio.php';
                     }
                 } else {

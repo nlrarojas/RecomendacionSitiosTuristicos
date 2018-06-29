@@ -44,5 +44,18 @@ class DefaultModel {
 
         return $query;
     }
+
+    public function obtenerSitioPorId($id) {        
+        $result = array();                
+        $this->conn = $this->conexion->reconectar();
+        $procedimiento = "call sp_sitio_id('$id')";
+        
+        $query = mysqli_query($this->conn, $procedimiento);
+        
+        while ($data = mysqli_fetch_assoc($query)) {
+            array_push($result, $data);                     
+        }            
+        return $result;
+    }
 }
 ?>

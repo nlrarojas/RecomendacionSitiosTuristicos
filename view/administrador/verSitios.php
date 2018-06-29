@@ -89,6 +89,7 @@ used to vertically center elements, may need modification if you're not using de
                       <?php
                             if (isset($sitio)) {
                                 while ($sitios = $sitio->fetch_array(MYSQLI_BOTH)) { 
+                                  
                                   ?> 
 
                     <tbody>
@@ -96,8 +97,8 @@ used to vertically center elements, may need modification if you're not using de
                             
                             <td align="center">                                                                   
                               <div style="width: 150%; display: inline-block;">
-                                <a href="?administrador&gestionarSitios&modificar" title="Editar ruta" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
-                                <a href="?administrador&gestionarSitios&eliminar" title="Borrar ruta" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                                <a href="?administrador&gestionarSitios&modificar&idSitio=<?php echo $sitios['id_sitio'];?>" title="Editar sitio" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                <a href="?administrador&gestionarSitios&eliminar&idSitio=<?php echo $sitios['id_sitio'];?>" title="Borrar sitio" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
                               </div>
                             </td>
                             <td class="hidden-xs"><?php echo $sitios['id_sitio'] ?> </td>
