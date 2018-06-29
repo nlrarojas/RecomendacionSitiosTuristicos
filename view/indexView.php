@@ -66,19 +66,19 @@ include_once 'header.php';
   <div class="col-lg-4">
     <img class="rounded-circle" src="view/img/puestoUno.jpg" alt="Generic placeholder image" width="140" height="140">
     <h2><?php echo $top[0]['nombre'] ?></h2>
-    <h6>Calificaion</h6>
+    <h6>Calificación</h6>
     <h5> <?php echo $top[0]['Calificacion'] ?></h5>
   </div><!-- /.col-lg-4 -->
   <div class="col-lg-4">
     <img class="rounded-circle" src="view/img/puestoDos.jpg" alt="Generic placeholder image" width="140" height="140">
     <h2><?php echo $top[1]['nombre'] ?></h2>
-    <h6>Calificaion</h6>
+    <h6>Calificación</h6>
     <h5> <?php echo $top[1]['Calificacion'] ?></h5>
   </div>
   <div class="col-lg-4">
     <img class="rounded-circle" src="view/img/puestoTres.jpg" alt="Generic placeholder image" width="140" height="140">
     <h2><?php echo $top[2]['nombre'] ?></h2>
-    <h6>Calificaion</h6>
+    <h6>Calificación</h6>
     <h5> <?php echo $top[2]['Calificacion'] ?></h5>
   </div>
 </div>
