@@ -16,6 +16,10 @@ a:hover{
     background-color: #244d19;
     border-color: #244d19;
 }
+input:active{
+    background-color: #244d19;
+    border-color: #244d19;
+}
 
 .text-muted{
     color: #244d19 
