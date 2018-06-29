@@ -88,15 +88,11 @@ used to vertically center elements, may need modification if you're not using de
                     </thead>
                     <tbody>
                           <tr>
-                            <td align="center">
-                                <div style="display: inline-block;">
-                                    <form action="?login&validar&gestionarSitios&&modificar" method="post">
-                                        <input type="submit" class="btn btn-success" value="Modificar"><em class="fa fa-pencil"></em>
-                                    </form>    
-                                    <form action="?login&validar&gestionarSitios&eliminar" method="post">
-                                        <input type="submit" class="btn btn-danger" value="Eliminar"><em class="fa fa-trash"></em>
-                                    </form> 
-                                </div>
+                            <td align="center">                                                                   
+                              <div style="width: 150%; display: inline-block;">
+                                <a href="?login&validar&gestionarSitios&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                <a href="?login&validar&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                              </div>
                             </td>
                             <td class="hidden-xs">1</td>
                             <td>Playa Conchal</td>
@@ -107,14 +103,10 @@ used to vertically center elements, may need modification if you're not using de
                           </tr>
                           <tr>
                             <td align="center">
-                                <div style="display: inline-block;">
-                                    <form action="?login&validar&gestionarSitios&&modificar" method="post">
-                                        <input type="submit" class="btn btn-success" value="Modificar"><em class="fa fa-pencil"></em>
-                                    </form>    
-                                    <form action="?login&validar&gestionarSitios&eliminar" method="post">
-                                        <input type="submit" class="btn btn-danger" value="Eliminar"><em class="fa fa-trash"></em>
-                                    </form> 
-                                </div>
+                              <div style="width: 150%; display: inline-block;">
+                                <a href="?login&validar&gestionarSitios&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                <a href="?login&validar&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                              </div>
                             </td>
                             <td class="hidden-xs">2</td>
                             <td>Bagaces</td>
