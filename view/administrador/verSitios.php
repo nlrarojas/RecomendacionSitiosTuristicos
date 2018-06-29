@@ -88,13 +88,11 @@ used to vertically center elements, may need modification if you're not using de
                     </thead>
                     <tbody>
                           <tr>
-                            <td align="center">
-                                <form action="?login&validar&gestionarSitios&&modificar" method="post">
-                                    <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                </form>    
-                                <form action="?login&validar&gestionarSitios&eliminar" method="post">
-                                    <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                                </form>
+                            <td align="center">                                                                   
+                              <div style="width: 150%; display: inline-block;">
+                                <a href="?login&validar&gestionarSitios&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                <a href="?login&validar&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                              </div>
                             </td>
                             <td class="hidden-xs">1</td>
                             <td>Playa Conchal</td>
@@ -102,6 +100,20 @@ used to vertically center elements, may need modification if you're not using de
                             <td>En Guanacaste</td>
                             <td>Playa</td>
                             <td>4.3</td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <div style="width: 150%; display: inline-block;">
+                                <a href="?login&validar&gestionarSitios&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                <a href="?login&validar&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                              </div>
+                            </td>
+                            <td class="hidden-xs">2</td>
+                            <td>Bagaces</td>
+                            <td>Puntarenas</td>
+                            <td>En Puntarenas</td>
+                            <td>Catarátas</td>
+                            <td>3.7</td>
                           </tr>
                         </tbody>
                 </table>            

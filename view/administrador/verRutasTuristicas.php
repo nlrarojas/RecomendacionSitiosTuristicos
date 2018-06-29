@@ -89,19 +89,13 @@ used to vertically center elements, may need modification if you're not using de
                     <tbody>
                           <tr>
                             <td align="center">
-                                <div style="display: inline-block;">
-                                    <form action="?login&validar&gestionarRutas&&modificar" method="post">
-                                        <input type="submit" class="btn btn-primary" value="Ver ruta"><em class="fa fa-pencil"></em>
-                                    </form> 
-                                    <form action="?login&validar&gestionarRutas&asignar" method="post">
-                                        <input type="submit" class="btn btn-info" value="Asignar sitios"><em class="fa fa-trash"></em>
-                                    </form> 
-                                    <form action="?login&validar&gestionarRutas&&modificar" method="post">
-                                        <input type="submit" class="btn btn-success" value="Modificar"><em class="fa fa-pencil"></em>
-                                    </form>    
-                                    <form action="?login&validar&gestionarRutas&eliminar" method="post">
-                                        <input type="submit" class="btn btn-danger" value="Eliminar"><em class="fa fa-trash"></em>
-                                    </form>                                     
+                                <div style="display: inline-block;">                                                                        
+                                    <div style="width: 150%; display: inline-block;">
+                                        <a data-toggle="tooltip" data-placement="top" title="Ver ruta" href="?login&validar&gestionarRutas&&ver" class="btn btn-outline-primary" style="float: left;"><img src="view/img/check.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Asignar ruta" href="?login&validar&gestionarRutas&&asignar" class="btn btn-outline-info" style="float: left;"><img src="view/img/add.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Modificar ruta" href="?login&validar&gestionarRutas&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Eliminar ruta" href="?login&validar&gestionarRutas&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                                    </div>                                    
                                 </div>
                             </td>
                             <td class="hidden-xs">1</td>
@@ -113,19 +107,13 @@ used to vertically center elements, may need modification if you're not using de
                           </tr>
                           <tr>
                             <td align="center">
-                                <div style="display: inline-block;">
-                                    <form action="?login&validar&gestionarRutas&&verRuta" method="post">
-                                        <input type="submit" class="btn btn-primary" value="Ver ruta"><em class="fa fa-pencil"></em>
-                                    </form>                                     
-                                    <form action="?login&validar&gestionarRutas&asignar" method="post">
-                                        <input type="submit" class="btn btn-info" value="Asignar sitios"><em class="fa fa-trash"></em>
-                                    </form> 
-                                    <form action="?login&validar&gestionarRutas&&modificar" method="post">
-                                        <input type="submit" class="btn btn-success" value="Modificar"><em class="fa fa-pencil"></em>
-                                    </form>    
-                                    <form action="?login&validar&gestionarRutas&eliminar" method="post">
-                                        <input type="submit" class="btn btn-danger" value="Eliminar"><em class="fa fa-trash"></em>
-                                    </form> 
+                                <div style="display: inline-block;">                                                                        
+                                    <div style="width: 150%; display: inline-block;">
+                                    <a data-toggle="tooltip" data-placement="top" title="Ver ruta" href="?login&validar&gestionarRutas&&ver" class="btn btn-outline-primary" style="float: left;"><img src="view/img/check.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Asignar ruta" href="?login&validar&gestionarRutas&&asignar" class="btn btn-outline-info" style="float: left;"><img src="view/img/add.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Modificar ruta" href="?login&validar&gestionarRutas&&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                        <a data-toggle="tooltip" data-placement="top" title="Eliminar ruta" href="?login&validar&gestionarRutas&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                                    </div>
                                 </div>
                             </td>
                             <td> <hidden>2</hidden></td>

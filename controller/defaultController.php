@@ -12,35 +12,73 @@ class DefaultController {
     }
 
     public function invoke() {
-        if(isset($_GET['sitiosTuristicos'])) {
-            if (isset($_GET[''])){
+        if (isset($_GET['administrador'])) {
+            if(isset($_GET['gestionarRutas'])) {
+                if (isset($_GET['insertar'])){
+                    include 'view/administrador/insertarRuta.php';
+                } elseif (isset($_GET['modificar'])){
+                    include 'view/administrador/modificarRuta.php';
+                } elseif (isset($_GET['eliminar'])){
+                    include 'view/administrador/eliminarRuta.php';
+                } else {
+                    include 'view/administrador/verRutasTuristicas.php';
+                }
+            } elseif(isset($_GET['gestionarSitios'])) {            
+                if (isset($_GET['insertar'])){
+                    include 'view/administrador/insertarSitio.php';
+                } elseif (isset($_GET['modificar'])){
+                    if (isset($_GET['modificarSitio'])){
+                        include 'view/administrador/indexView.php';
+                    } else {
+                        include 'view/administrador/modificarSitio.php';
+                    }
+                } elseif (isset($_GET['eliminar'])){
+                    if (isset($_GET['eliminarSitio'])){
+                        include 'view/administrador/indexView.php';
+                    } else {
+                        include 'view/administrador/eliminarSitio.php';
+                    }
+                } else {
+                    include 'view/administrador/verSitios.php';
+                }
+            } elseif(isset($_GET['cerrar'])) {            
+                if (isset($_GET[''])){
+                    
+                } 
+                include '../../index.php';
+            } else {            
+                include 'view/administrador/indexView.php';
+            }            
+        } else {     
+            if(isset($_GET['sitiosTuristicos'])) {
+                if (isset($_GET[''])){
 
-            }
-            include 'view/sitiosTuristicos.php';
-        } elseif(isset($_GET['sitioEspecifico'])) {
-            if (isset($_GET[''])){
+                }
+                include 'view/sitiosTuristicos.php';
+            } elseif(isset($_GET['sitioEspecifico'])) {
+                if (isset($_GET[''])){
 
-            }
-            include 'view/sitioEspecifico.php';
+                }
+                include 'view/sitioEspecifico.php';
 
-        } elseif(isset($_GET['ingresar'])) {
-            include 'view/login.php';
-        }
-        elseif(isset($_GET['busquedaSitio'])) {
-            if (isset($_GET[''])){
-
-            }
-            include 'view/busquedaSitio.php';
-        }
-        elseif(isset($_GET['login'])) {            
-            if (isset($_GET['validar'])){                
-                include 'view/indexAdministrador.php';
-            } else {                
+            } elseif(isset($_GET['ingresar'])) {
                 include 'view/login.php';
+            } elseif(isset($_GET['busquedaSitio'])) {
+                if (isset($_GET[''])){
+
+                }
+                include 'view/busquedaSitio.php';
+            } elseif(isset($_GET['login'])) {            
+                if (isset($_GET['validar'])){                
+                    header("Location: ?administrador");
+                    die();                    
+                } else {                
+                    include 'view/login.php';
+                }
+            } else {            
+
+                include 'view/indexView.php';
             }
-        }else {            
-               $sitios = $this->model->obtenerSitios();
-            include 'view/indexView.php';
         }
     }
 }
