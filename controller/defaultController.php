@@ -24,7 +24,7 @@ class DefaultController {
                     include 'view/administrador/verRutasTuristicas.php';
                 }
             } elseif(isset($_GET['gestionarSitios'])) { 
-                $sitio=$this->model->ObtenerSitios();         
+                $sitio=$this->model->ObtenerSitiosMer();         
                 if (isset($_GET['insertar'])){
                     if (isset($_GET['insertarSitio'])){
                     $sitioInsertado = $this->model->InsertarSitio($_POST['nombreSitio'],
@@ -77,6 +77,15 @@ class DefaultController {
                 }
                 include 'view/sitioEspecifico.php';
 
+            }elseif (isset($_GET['busquedaBayes'])){
+                $calificacion = $_POST['calificacion']; 
+                $distancia = $_POST['distancia']; 
+                $provincia = $_POST['provincia']; 
+                $duracion = $_POST['duracion']; 
+
+                $ruta = $this->model->obtenerRuta($calificacion, $duracion, $distancia, $provincia)[0];
+               include 'view/busquedaBayes.php';
+
             } elseif(isset($_GET['ingresar'])) {
                 include 'view/login.php';
             } elseif(isset($_GET['busquedaSitio'])) {
@@ -104,9 +113,14 @@ class DefaultController {
                 } else {                
                     include 'view/login.php';
                 }
-            } else {            
-
+            } else {  
+                //esto hace llegar la info a la vista y va aqui por que se carga apaenas levanta              
+                $top = $this->model->topTres();
+                //print_r($top);
+                           
                 include 'view/indexView.php';
+                   
+               
             }
         }
     }

@@ -41,7 +41,7 @@
                         </li>
                     </ul> 
                     </li>
-                        <a class="nav-link btn " href="?cerrar" style="float: right; color: white;">Cerrar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
+                        <a class="nav-link btn-primary " href="?cerrar" style="float: right; color: white;">Cerrar Sesión<span class="sr-only" style="background-color: #009999;">(current)</span></a>
                     </li>
                 </div>
             </nav>   

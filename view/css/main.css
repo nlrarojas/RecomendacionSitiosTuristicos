@@ -1,0 +1,26 @@
+a {
+    color: #244d19
+}
+a:hover{
+    color: #244d19  
+}
+.bg-green{
+    background-color: #48713e;
+}
+
+.btn-primary{
+    background-color: #48713e;
+    border-color: #48713e;
+}
+.btn-primary:hover{
+    background-color: #244d19;
+    border-color: #244d19;
+}
+input:active{
+    background-color: #244d19;
+    border-color: #244d19;
+}
+
+.text-muted{
+    color: #244d19 
+  }
