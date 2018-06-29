@@ -34,10 +34,10 @@
                             <a class="nav-link btn btn-primary" href="index.php" style="color: white;">Inicio<span class="sr-only">(current)</span></a>
                         </li>                        
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?login&validar&gestionarSitios" style="color: white;">Gestionar sitios<span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn btn-primary" href="?administrador&gestionarSitios" style="color: white;">Gestionar sitios<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link btn btn-primary" href="?login&validar&gestionarRutas" style="color: white;">Gestionar rutas<span class="sr-only">(current)</span></a>
+                            <a class="nav-link btn btn-primary" href="?administrador&gestionarRutas" style="color: white;">Gestionar rutas<span class="sr-only">(current)</span></a>
                         </li>
                     </ul> 
                     </li>
