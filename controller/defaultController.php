@@ -68,6 +68,8 @@ class DefaultController {
                 $duracion = $_POST['duracion']; 
 
                 $ruta = $this->model->obtenerRuta($calificacion, $duracion, $distancia, $provincia)[0];
+                $sitios = $this->model->obtenerSitiosPorRuta($ruta['id_ruta']);
+                
                include 'view/busquedaBayes.php';
 
             } elseif(isset($_GET['ingresar'])) {
