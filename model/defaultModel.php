@@ -25,5 +25,18 @@ class DefaultModel {
         }        
         return $sitios;
     }
+
+
+    public function obtenerRuta($calificacion, $duracion, $distancia, $provincia){
+        //Se ejecuta el procedimiento 
+        $procedimiento = "call sp_bayes(1, 2, 2, 1)";
+        $query = mysqli_query($this->conn, $procedimiento);
+        $ruta = array();
+        //Se obtienen los datos de la base de datos y se almacenan en un arreglo
+        while ($data = mysqli_fetch_assoc($query)) {
+            array_push($ruta, $data);
+        }        
+        return $ruta;
+    }
 }
 ?>

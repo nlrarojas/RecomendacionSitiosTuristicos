@@ -97,7 +97,7 @@ include_once 'header.php';
 <div class="row featurette">
   <div class="col-md-7">
     <h2 class="featurette-heading">Búsqueda de Rutas de </br><span class="text-muted" style="color: #244d19!important;">Costa Rica.</span></h2>
-  <form  action="view/busquedaBayes.php" method="post">
+  <form  action="?busquedaBayes" method="post">
   <div class="form-group">
   <label>Clasificación</label>
       <select class="form-control" name="calificacion" value="calificacion" required>

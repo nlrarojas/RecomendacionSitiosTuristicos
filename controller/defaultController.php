@@ -61,6 +61,15 @@ class DefaultController {
                 }
                 include 'view/sitioEspecifico.php';
 
+            }elseif (isset($_GET['busquedaBayes'])){
+                $calificacion = $_POST['calificacion']; 
+                $distancia = $_POST['distancia']; 
+                $provincia = $_POST['provincia']; 
+                $duracion = $_POST['duracion']; 
+
+                $ruta = $this->model->obtenerRuta($calificacion, $duracion, $distancia, $provincia)[0];
+               include 'view/busquedaBayes.php';
+
             } elseif(isset($_GET['ingresar'])) {
                 include 'view/login.php';
             } elseif(isset($_GET['busquedaSitio'])) {
