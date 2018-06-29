@@ -1,10 +1,55 @@
       <!-- FOOTER -->
-      <footer class="container">
+      <footer class="container" style="clear:both;">
         <p class="float-right"><a href="#">Ir al inicio</a></p>
         <p>&copy; Explorer CR, 2018. &middot; <a href="#">Derechos</a> &middot; <a href="#">Reservados</a></p>
       </footer>
     </main>
 
+
+
+    <script>
+    function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: {lat: 41.85, lng: -87.65}
+        });
+        directionsDisplay.setMap(map);
+
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        var waypts = [];
+        var sitios = <?php echo json_encode($sitios) ?>;
+        for (var i = 0; i < sitios.length; i++) {
+          console.log(sitios[i].longitud);
+           waypts.push({
+              location: new google.maps.LatLng(sitios[i].longitud,sitios[i].latitud),
+              stopover: true
+            }); 
+        }
+
+        directionsService.route({
+          origin: new google.maps.LatLng(<?php $resultado = str_replace(",", ".", $ruta['punto_partida_log']); echo $resultado;?>,<?php  $resultado = str_replace(",", ".", $ruta['punto_partida_lat']); echo $resultado; ?>),
+          destination: new google.maps.LatLng(<?php  $resultado = str_replace(",", ".", $ruta['punto_llegada_log']); echo $resultado;?>,<?php  $resultado = str_replace(",", ".", $ruta['punto_llegada_lat']); echo $resultado;?>),
+          waypoints: waypts,
+          optimizeWaypoints: true,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmprM9daEOTyPl-J1FEdGJK5VudcBhG-o&callback=initMap"
+    async defer></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

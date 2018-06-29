@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="view/css/main.css">
     <!-- Custom styles for this template -->
     <link href="view/css/carousel.css" rel="stylesheet">
+    <style>
+    #map {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
     
   </head>
   <body>

@@ -16,10 +16,13 @@
     </p>
   </div>
   <div class="col-md-5 order-md-1">
-    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+  <div id="map">
   </div>
 </div>
 </div>
+</div>
 </main>
+
+
 
 <?php include_once 'view/footer.php' ?>

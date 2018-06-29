@@ -73,16 +73,28 @@ class DefaultModel {
 
     public function obtenerRuta($calificacion, $duracion, $distancia, $provincia){
         //Se ejecuta el procedimiento 
-        $procedimiento = "call sp_bayes(1, 2, 2, 1)";
+        $procedimiento = "call sp_bayes('$calificacion', '$duracion', '$distancia', '$provincia')";
         $query = mysqli_query($this->conn, $procedimiento);
         $ruta = array();
         //Se obtienen los datos de la base de datos y se almacenan en un arreglo
         while ($data = mysqli_fetch_assoc($query)) {
             array_push($ruta, $data);
         }        
+        $this->conn = $this->conexion->reconectar();  
         return $ruta;
     }
 
+    public function obtenerSitiosPorRuta($idRuta){
+        //Se ejecuta el procedimiento 
+        $procedimiento = "call sp_obtener_sitios_por_ruta('$idRuta')";
+        $query = mysqli_query($this->conn, $procedimiento);
+        $sitios = array();
+        //Se obtienen los datos de la base de datos y se almacenan en un arreglo
+        while ($data = mysqli_fetch_assoc($query)) {
+            array_push($sitios, $data);
+        }        
+        return $sitios;
+    }
     public function topTres(){
         //Se ejecuta el procedimiento 
         $procedimiento = "call top_tres();";
