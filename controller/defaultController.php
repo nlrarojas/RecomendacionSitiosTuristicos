@@ -39,7 +39,7 @@ class DefaultController {
                 include 'view/login.php';
             }
         }else {            
-
+               $sitios = $this->model->obtenerSitios();
             include 'view/indexView.php';
         }
     }

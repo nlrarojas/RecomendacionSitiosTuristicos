@@ -13,5 +13,17 @@ class DefaultModel {
         //Se establece la conexión con la base de datos
         $this->conn = $this->conexion->conectar();                
     }
+
+    public function obtenerSitios() {
+        //Se ejecuta el procedimiento 
+        $procedimiento = "call sp_obtener_nombres_sitios()";
+        $query = mysqli_query($this->conn, $procedimiento);
+        $sitios = array();
+        //Se obtienen los datos de la base de datos y se almacenan en un arreglo
+        while ($data = mysqli_fetch_assoc($query)) {
+            array_push($sitios, $data);
+        }        
+        return $sitios;
+    }
 }
 ?>
