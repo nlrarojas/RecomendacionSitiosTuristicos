@@ -40,7 +40,7 @@ class DefaultModel {
 
         $query = "";
 
-        $query = mysqli_query($this->conn, "call sp_obtener_sitio('')");
+        $query = mysqli_query($this->conn, "call sp_obtener_sitio()");
 
         return $query;
     }

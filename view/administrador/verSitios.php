@@ -67,7 +67,7 @@ used to vertically center elements, may need modification if you're not using de
                     <h3 class="panel-title">Gestionar sitios</h3>
                   </div>
                   <div class="col col-xs-6 text-right">
-                    <form action="?administrador&gestionarSitios&insertar" method="post">
+                    <form action="?administrador&gestionarSitios" method="post">
                         <button type="submit" class="btn btn-sm btn-primary btn-create">Nuevo sitio</button>
                     </form>
                   </div>
@@ -96,15 +96,15 @@ used to vertically center elements, may need modification if you're not using de
                             
                             <td align="center">                                                                   
                               <div style="width: 150%; display: inline-block;">
-                                <a href="?administrador&gestionarSitios&modificar" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
-                                <a href="?administrador&gestionarSitios&eliminar" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
+                                <a href="?administrador&gestionarSitios&modificar" title="Editar ruta" class="btn btn-outline-success" style="float: left;"><img src="view/img/edit.png"></img></a>
+                                <a href="?administrador&gestionarSitios&eliminar" title="Borrar ruta" class="btn btn-outline-danger" style="float: left;"><img src="view/img/delete.png"></img></a>
                               </div>
                             </td>
-                            <td class="hidden-xs"><?php echo $sitios['idSitio'] ?> </td>
-                            <td> <?php echo $sitios['nombreSitio'] ?></td>
-                            <td> <?php echo $sitios['proviciaSitio'] ?> </td>
-                            <td> <?php echo $sitios['descripcionSitio'] ?> </td>
-                            <td> <?php echo $sitios['calificacionSitio'] ?> </td>
+                            <td class="hidden-xs"><?php echo $sitios['id_sitio'] ?> </td>
+                            <td> <?php echo $sitios['nombre'] ?></td>
+                            <td> <?php echo $sitios['provincia'] ?> </td>
+                            <td> <?php echo $sitios['descripcion'] ?> </td>
+                            <td> <?php echo $sitios['calificacion'] ?> </td>
                          
                           </tr>
                          

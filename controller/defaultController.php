@@ -23,7 +23,8 @@ class DefaultController {
                 } else {
                     include 'view/administrador/verRutasTuristicas.php';
                 }
-            } elseif(isset($_GET['gestionarSitios'])) {          
+            } elseif(isset($_GET['gestionarSitios'])) { 
+                $sitio=$this->model->ObtenerSitios();         
                 if (isset($_GET['insertar'])){
                     if (isset($_GET['insertarSitio'])){
                     $sitioInsertado = $this->model->InsertarSitio($_POST['nombreSitio'],
@@ -51,8 +52,7 @@ class DefaultController {
                         include 'view/administrador/eliminarSitio.php';
                     }
                 } else {
-                    $sitio=$this->model->ObtenerSitios();
-                    print_r($sitio);
+
                     include 'view/administrador/verSitios.php';
                 }
             } elseif(isset($_GET['cerrar'])) {            
